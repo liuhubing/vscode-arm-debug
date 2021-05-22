@@ -1,0 +1,14 @@
+{
+    "configurations": [
+
+    {
+        "cwd": "${workspaceRoot}",
+        "executable": "F:/iarprj/test1/Debug/Exe/test1.out",
+        "name": "Debug Microcontroller",
+        "request": "launch",
+        "device":"STM32F103C8",  
+        "type": "cortex-debug",
+        "servertype": "jlink"
+    }
+    ]
+}
