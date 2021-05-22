@@ -1,0 +1,38 @@
+{
+    "configurations": [
+    {
+        "name": "Debug GDBServer",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "F:/iarprj/test1/Debug/Exe/test1.out",
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:/Program Files (x86)/Atmel/Studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/arm-none-eabi-gdb.exe",
+        "debugServerPath": "C:/Program Files (x86)/SEGGER/JLink/JLinkGDBServerCL.exe",
+        "debugServerArgs": "-if swd -singlerun -strict -endian little -speed auto -port 3333 -device STM32F103C8 -vd -strict -halt",
+        "serverStarted": "Connected\\ to\\ target",
+        "serverLaunchTimeout": 5000,
+        "filterStderr": false,
+        "filterStdout": true,
+        "setupCommands": [
+            {
+                "text": "target remote localhost:3333"
+            },
+            {
+                "text": "monitor flash breakpoints = 1"
+            },
+            {
+                "text": "monitor flash download = 1"
+            },
+            {
+                "text": "monitor reset"
+            },
+            {
+                "text": "monitor reset"
+            }
+        ]
+    }
+    ]
+}
