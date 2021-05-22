@@ -8,6 +8,7 @@
         "request": "launch",
         "device":"STM32F103C8",  
         "type": "cortex-debug",
+        "runToMain":true,
         "servertype": "jlink"
     }
     ]
